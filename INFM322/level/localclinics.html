@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Project MyNextLVL</title>
+  </head>
+  <body>
+    <style>
+      .navbar {
+      text-align: center;
+      background-color: #f89318;
+    }
+    .nav {
+      text-align: justify;
+    }
+    .h1 {
+      font-size: 20px;
+    }
+    img {
+      align-items: center;
+    }
+
+    .mainlogo {
+      width: 850px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav li{
+      list-style:none;
+      }
+    h2 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    h1 {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h3 {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .dropdown-submenu {
+    color: #f89318;
+    position: relative;
+    background-color: #ffffff;
+}
+  .dropdown-submenu>.dropdown-menu {
+    color: #f89318;
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    background-color: #ffffff;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 6px;
+}
+  .dropdown-submenu:hover>.dropdown-menu {
+    color: #f89318;
+    display: block;
+    background-color: #ffffff;
+    font-weight: 600;
+}
+  .dropdown-submenu>a:after {
+    color: #f19318;
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+  .dropdown-submenu:hover>a:after {
+    color: #f19318;
+    background-color: #ffffff;
+}
+  .dropdown-submenu.pull-left {
+    color: #f19318;
+    float: none;
+    background-color: #ffffff;
+}
+  .dropdown-submenu.pull-left>.dropdown-menu {
+    color: #f19318;
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: #ffffff;
+}
+  .footertext {
+    color:  #ffffff;
+  }
+    </style>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+<a class="nav-link" href="lvlindex.html"><img src="logo.jpg.png" width="83" alt="Logo" class="logoborder centerlogo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         <li class="nav-item">
+              <a class="nav-link" href="signedin.html">Home</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="hippa.html">HIPAA Regulations</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Information/Resources
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="conditionsinfo.html">General Information for Conditions</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="localclinics.html">Medical Clinics</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="medicaled.html">Medical Education and Links</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="localsupport.html">Local Resources</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                      </ul>
+                    </li>
+					</li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Your Profile</a>
+				  </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lvlindex.html">Logout</a>
+        </li>
+        </form>
+      </div>
+    </nav>
+</div>
+<br>
+  <p>
+Physicians' Care Clinic <br>
+Address: 440 Winn Way<br>
+Decatur, GA 30030 Hours:  <br>
+Thursday   9AM–4PM <br>
+Friday     Closed <br>
+Saturday   Closed <br>
+Sunday 	   Closed <br>
+Monday     9AM–4PM <br>
+Tuesday    9AM–4PM <br>
+Wednesday  9AM–4PM <br>
+Phone: (404) 501-7940 <br>
+    </p>
+ 	<p>
+Clarkston Community Health Center<br>
+3700 Market Street, Suite E1 <br>
+Clarkston GA, 30021 <br>
+Contact Phone: (678) 359-2060 <br>
+	</p>
+	<p>
+East DeKalb Health Center - Lithonia Low Cost Clinic <br>
+2277 S. Stone Mountain-Lithonia Road <br>
+Lithonia GA, 30058 <br>
+Contact Phone: (770) 484-2600 <br>
+	</p>
+	<p>
+Mercy Care at Chamblee - Chamblee Community Health Center <br>
+5134 Peachtree Road <br>
+Chamblee GA, 30341 <br>
+Contact Phone: (678) 872-7100 <br>
+<a href="https://www.mercyatlanta.org/">https://www.mercyatlanta.org/</a><br>
+	</p>
+	<p>
+Oakhurst Medical Centers - Decatur Location - Decatur Community Health Center <br>
+1760 Candler Rd <br>
+Decatur GA, 30032 <br>
+Contact Phone: (404) 286-2215 <br>
+<a href="http://oakmed.org/">http://oakmed.org/</a> <br>
+	  </p>
+ 	<p>
+Oakhurst Medical Centers - Hillandale Location - Lithonia Community Health Center<br>
+5910 Hillandale Drive, Suite 102 <br>
+Lithonia GA, 30058 <br>
+Contact Phone: (404) 400-8929 <br>
+	  </p>
+	<p>
+Oakhurst Medical Centers - Stone Mountain Location - Stone Mountain Community Health Center
+5582 Memorial Drive <br>
+Stone Mountain GA, 30083 <br>
+Contact Phone: (404) 298-8998 <br>
+	</p>
+	<p>
+
+</p><h5><strong>Grady Financial Assistance Program</strong></h5>
+
+<p>Grady offers discounted care under a Financial Assistance Program to qualified individuals for emergency and medically necessary services. Grady does not discriminate in the provision of emergency or medically necessary care based on ability to pay or source of payment. If you need information about financial assistance or an application form visit the billing and insurance page: <a href="https://www.gradyhealth.org/billing-insurance/">https://www.gradyhealth.org/billing-insurance/</a><br>
+BY PHONE:  Call (404) 616-6920 to schedule a time to meet with a Financial Counselor at Grady. <br>
+BY MAIL:  Print Financial Assistance Application Form and mail the completed form to: <br>
+Grady Memorial Hospital <br>
+Attn: Financial Assistance Program <br>
+80 Jesse Hill Jr. Drive SE <br>
+PO Box 26071 <br>
+Atlanta, GA 30303 <br>
+ </p>
+<strong>Grady Neighborhood Primary Care Centers</strong> <br>
+
+<p>Grady Memorial Hospital <br>
+80 Jesse Hill Jr Drive SE <br>
+Atlanta, GA 30303 <br>
+Locations on hospital's Ground Floor and First Floor <br>
+Monday - Friday: 8 AM - 4:30 PM <br>
+	</p>
+	<p>
+Grady Brookhaven Health Center <br>
+2695 Buford Hwy NE, Suite 200 <br>
+Atlanta, GA 30324 <br>
+Monday - Friday: 8 AM - 5 PM <br>
+	  </p>
+	  <p>
+Grady Kirkwood Health Center <br>
+1863 Memorial Drive SE <br>
+Atlanta, GA 30317 <br>
+Monday - Friday: 7 AM - 5 PM <br>
+Wednesday: 10 AM - 7 PM <br>
+	</p>
+	<p>
+Camp Creek Comprehensive Care Center <br>
+3896 Princeton Lakes Way <br>
+Atlanta, GA 30331 <br>
+Monday - Friday: 7 AM - 5 PM <br>
+Saturday: 8 AM - Noon <br>
+	  </p>
+	 <p>
+East Point Health Center <br>
+1595 W. Cleveland Ave. <br>
+East Point, GA 30344 <br>
+Monday - Friday: 8 AM - 5 PM <br>
+	  </p>
+	<p>
+Good Samaritan Health clinic <br>
+Address: 1015 Donald Lee Hollowell Parkway NW <br>
+Atlanta, GA - 30318 <br>
+Phone:  (404) 523-6571 <br>
+Office Hours <br>
+-	Monday 7:45 AM - 4:00 PM <br>
+-	Tuesday 7:45 AM - 4:00 PM <br>
+-	Wednesday 7:45 AM - 4:00 PM <br>
+-	Thursday 7:45 AM - 4:00 PM <br>
+-	Friday 7:45 AM - 12:00 PM <br>
+-	Saturday 7:45 AM - 12:00 PM <br>
+-	Sunday closed <br>
+	  </p><br>
+	  <p>
+The Harriet Tubman Women's Clinic at Clarkston Community Health Center - Clarkston Free Clinic <br>
+3700 Market Street <br>
+Suite 1 <br>
+Clarkston GA, 30021 <br>
+Contact Phone: (470) 344-8929 <br>
+<a href="https://www.clarkstonhealth.org/women-s-health">https://www.clarkstonhealth.org/women-s-health</a><br>
+<strong>Women's Health Services:</strong> </p><ul>
+  <li>Well Woman Exams</li>
+  <li>Pap Smears</li>
+  <li>Clinical Breast Exams</li>
+  <li>Child Spacing &amp; Family Planning</li>
+  <li>Sexually Transmitted Infection Screening</li>
+  <li>Menopausal Symptom Diagnosis</li>
+  <li>Pregnancy Testing</li>
+  <li>Blood and Urine Tests </li>
+</ul>
+Operation Hours: Sun: 4:00pm-6:00pm <br>
+	  <p></p>
+	  <p>
+<strong>DeKalb County Health Centers:</strong>  <br>
+	</p><p>
+SPRINGS HEALTH CENTER <br>
+3110 Clifton Springs Road Decatur, GA 30034 <br>
+404-244-2200 <br>
+	</p>
+	<p>
+EAST DEKALB HEALTH CENTER <br>
+2277 S. Stone Mountain-Lithonia Road <br>
+Lithonia, GA 30058 <br>
+770-484-2600 <br>
+	</p>
+	<p>
+NORTH DEKALB HEALTH CENTER <br>
+3807 Clairmont Rd., NE Chamblee, GA 30341 <br>
+770-454-1144 <br>
+	</p>
+	<p>
+RICHARDSON HEALTH CENTER <br>
+445 Winn Way <br>
+Decatur, GA 30030 <br>
+404-294-3700<br>
+HOURS: Monday – Friday 8:15 a.m. to 5 p.m. <br>
+For more information, call 404-294-3762 <br>
+	</p>
+	<p>
+T.O. VINSON HEALTH CENTER <br>
+440 Winn Way Decatur, GA 30030 <br>
+404.294.3762 <br>
+	</p>
+	<p>
+Recovery Consultants of Atlanta - Decatur Community Health Center <br>
+4229 Snapfinger Woods Drive <br>
+Decatur GA, 30035 <br>
+Contact Phone: (404) 286-9252 <br>
+<a href="http://www.recoveryconsultants.org/">http://www.recoveryconsultants.org/</a> <br>
+Services:</p><ul>
+		<li>Primary Care</li>
+		<li>Primary Substance Abuse and HIV Prevention Services</li>
+		<li>HIV &amp; HEP C Screening and Testing</li>
+		<li>Mental Health and Cooccurring Disorder Treatment</li>
+		<li>Outpatient Behavioral Health</li>
+		<li>Psychiatric Care</li>
+		<li>Viral Hepatitis Screening</li>
+		<li>Testing and Vaccination</li>
+	</ul><p></p><br>
+	<p>
+Southside Medical Center - Decatur <br>
+Location: 540 Fayetteville Road, SE<br>
+Atlanta, GA - 30316 <br>
+Contact Phone: (404) 341-6686 <br>
+Details: Southside Medical Center is a leader in organizing, providing and supporting affordable health care and related services to the public through diversified business activities. SMC’s core values include Compassion, Accountability, Respect, Excellence and Service. <br>
+	</p>
+	<p>
+Southside Medical Center - Gresham <br>
+Location: 2578 Gresham Rd, SE <br>
+Atlanta, GA - 30316 <br>
+Contact Phone: (404) 341-6686 <br>
+Details: Southside Medical Center is a leader in organizing, providing and supporting affordable health care and related services to the public through diversified business activities. SMC’s core values include Compassion, Accountability, Respect, Excellence and Service. <br>
+	</p>
+	<p>
+Southside Medical Center - Main Center <br>
+Location: 1046 Ridge Avenue, SW <br>
+Atlanta, GA - 30315 <br>
+Contact Phone: (404) 341-6686 <br>
+Details: Southside Medical Center is a leader in organizing, providing and supporting affordable health care and related services to the public through diversified business activities. SMC’s core values include Compassion, Accountability, Respect, Excellence and Service. <br>
+	</p>
+	<p>
+Whitefoord, Inc. Family Medical Center <br>
+Location: 30 Warren St SE<br>
+Atlanta, GA - 30317 <br>
+Contact Phone: (404) 373-6614 <br>
+Details: Staffed by highly trained professionals, the Family Medical Center is equipped to handle most medical problems. From treatment of chronic diseases such as diabetes, high blood pressure and asthma to routine illnesses such as pneumonia, sore throats, infections, and obesity, our providers work to help meet your medical needs. If a specialist is needed, we will make a referral for you. Whitefoord Family Medical Center offers after hours coverage to our patients. <br>
+	</p>
+	<p>
+<strong>Someone Cares, Inc. of Atlanta (STD Clinic)</strong> <br>
+Headquarters | Holistic Health &amp; Wellness Center<br>
+1950 Spectrum Circle SE<br>
+Ste. 145<br>
+Marietta, GA 30067- 8479<br>
+<br>
+Garnett Station Place <br>
+236 Forsyth St, SW <br>
+Ste. 204 <br>
+Atlanta, GA 30303 <br>
+(678) 921-2706 Main Client Number <br>
+(470) 767-4604 Emergency Only <br>
+(678) 388-8649 Fax <br>
+<a href="https://www.someonecaresatl.org">https://www.someonecaresatl.org</a>
+
+
+
+
+
+</p></article>
+</html>

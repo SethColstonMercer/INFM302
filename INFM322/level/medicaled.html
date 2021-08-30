@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Project MyNextLVL</title>
+  </head>
+  <body>
+    <style>
+      .navbar {
+      text-align: center;
+      background-color: #f89318;
+    }
+    .nav {
+      text-align: justify;
+    }
+    .h1 {
+      font-size: 20px;
+    }
+    img {
+      align-items: center;
+    }
+
+    .mainlogo {
+      width: 850px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav li{
+      list-style:none;
+      }
+    h2 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    h1 {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h3 {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .dropdown-submenu {
+    color: #f89318;
+    position: relative;
+    background-color: #ffffff;
+}
+  .dropdown-submenu>.dropdown-menu {
+    color: #f89318;
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    background-color: #ffffff;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 6px;
+}
+  .dropdown-submenu:hover>.dropdown-menu {
+    color: #f89318;
+    display: block;
+    background-color: #ffffff;
+    font-weight: 600;
+}
+  .dropdown-submenu>a:after {
+    color: #f19318;
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+  .dropdown-submenu:hover>a:after {
+    color: #f19318;
+    background-color: #ffffff;
+}
+  .dropdown-submenu.pull-left {
+    color: #f19318;
+    float: none;
+    background-color: #ffffff;
+}
+  .dropdown-submenu.pull-left>.dropdown-menu {
+    color: #f19318;
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: #ffffff;
+}
+  .footertext {
+    color:  #ffffff;
+  }
+    </style>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap-4.0.0.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+<a class="nav-link" href="lvlindex.html"><img src="logo.jpg.png" width="83" alt="Logo" class="logoborder centerlogo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         <li class="nav-item">
+              <a class="nav-link" href="signedin.html">Home</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="hippa.html">HIPAA Regulations</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Information/Resources
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="conditionsinfo.html">General Information for Conditions</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="localclinics.html">Medical Clinics</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="medicaled.html">Medical Education and Links</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="localsupport.html">Local Resources</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                      </ul>
+                    </li>
+					</li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Your Profile</a>
+				  </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lvlindex.html">Logout</a>
+        </li>
+        </form>
+      </div>
+    </nav>
+</div>
+
+<div id="accordion1" role="tablist">
+	  <div class="card">
+	    <div class="card-header" role="tab" id="headingOne1">
+	      <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1"> Asthma </a> </h5>
+        </div>
+	    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion1">
+	      <div class="card-body"><article><p>Asthma is a disease that affects your lungs. It causes repeated episodes of wheezing, breathlessness, chest tightness, and nighttime or early morning coughing. Asthma can be controlled by taking medicine and avoiding the triggers that can cause an attack. You must also remove the triggers in your environment that can make your asthma worse.</p>
+		  <h5>Quick Facts about asthma:</h5> <br>
+			  <iframe width="560" height="315" src="https://www.youtube.com/embed/PzfLDi-sL3w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><br>
+
+<h5>Key information about Asthma: </h5>
+
+Symptoms: <br>
+<ul><li>Coughing</li><li>Shortness of breath</li><li>Wheezing and chest Tightness</li></ul>
+<p>Asthma can lead to a medical emergency.
+Know how to use your asthma inhaler.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BbONuRXJdr0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<br>
+
+<h5>Signs of an Asthma Attack:</h5>
+<p>An asthma attack can happen when you are exposed to asthma triggers. Your asthma triggers can be very different from someone else’s asthma triggers. A trigger is something you are sensitive to that makes your airways become inflamed. This causes swelling, mucous production and narrowing in your airways.
+Know your triggers and learn how to avoid them. Watch out for an attack when you can’t avoid your triggers. Some of the most common triggers are tobacco smoke, stress, exercise, dust mites, outdoor air pollution, cockroach allergen, pets, mold, and smoke from burning wood or grass, and infections like flu. </p>
+
+<p>What Is the Treatment for Asthma?
+People with asthma usually see a doctor that specializes in allergies or the immune system. You and your doctor will come up with a plan to treat your asthma. It often involves a blend of medication and avoiding triggers.
+<h4>Remember to take your allergy and asthma medicines when you should. Use your quick-acting medicine as soon as you start to notice symptoms.</h4> <br><br>
+
+Reference: <a href="http://www.cdc.gov/asthma ">www.cdc.gov/asthma </a></p>
+
+<h5>Asthma Education Links:</h5>
+ 	<a href="https://www.cdc.gov/asthma/default.htm">https://www.cdc.gov/asthma/default.htm</a><br>
+	<a href="https://www.choa.org/medical-services/asthma">https://www.choa.org/medical-services/asthma</a><br>
+ 	<a href="https://www.choa.org/medical-services/wellness-and-preventivecare/parent-resources/all/asthma-at-home">https://www.choa.org/medical-services/wellness-and-preventivecare/parent-resources/all/asthma-at-home</a> </article></div>
+        </div>
+    </div>
+	  <div class="card">
+	    <div class="card-header" role="tab" id="headingTwo1">
+	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1">	Diabetes </a> </h5>
+        </div>
+	    <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1">
+	      <div class="card-body"><article><p>Diabetes mellitus is a very serious metabolic disorder that prevents the normal breakdown and use of food, especially sugars (carbohydrates) by the body. It can damage the heart, blood vessels, kidneys, and neuro-logical system and can cause a progressive loss of vision over many years. </p>
+
+<h5>Forms of Diabetes </h5>
+<p>There are multiple forms of diabetes, but the two most common forms are called type 1 and type 2 diabetes. Both forms can occur at any age, but a child is more likely to be diagnosed with type 1 diabetes.</p>
+
+<h5>About type 1 Diabetes</h5>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/9tvD2sMl9hI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><br>
+<p>Type 1 diabetes is caused by inadequate production of the hormone insulin by the pancreas. When that happens, the body is unable to properly metabolize sugars, which build up in the bloodstream; these sugars (also called glucose) cannot be used by the body and are excreted in the urine. This leads to the major symptoms of diabetes:<br></p><ul><li>Increased urination</li>
+			  <li>Thirst</li>
+			  <li>Increased appetite</li>
+			  <li>Weight loss</li></ul> <p></p>
+
+<h5>About type 2 Diabetes</h5>
+<p>Glucose is found in the blood and is the body's main source of energy. The food you eat is broken down by the body into glucose. Glucose is a type of sugar that gives energy to the cells in the body. The cells need the help of insulin to take the glucose from the blood to the cells. Insulin is made by an organ called the pancreas. In children with type 2 diabetes, the pancreas does not make enough insulin and the cells don't use the insulin very well. </p>
+
+<h5>Controlling and Managing Type 1 &amp; Type 2 Diabetes</h5>
+
+<p>It is essential to control diabetes properly in order to avoid complications. <br> </p><ul>
+<li>Management focuses on routine blood sugar monitoring, insulin therapy, given as multiple injections per day or through an insulin pump, and close regulation of a healthy diet. </li>
+<li>Maintaining blood sugars within a normal range can reduce the likelihood of symptoms of high or low blood sugars and decrease the risk of long-term health problems related to poor diabetes control.  </li>
+<li>Eat healthy (More fruits &amp; vegetables. Less sugar &amp; salt)</li>
+<li>Get at least thirty minutes of exercise a day can help you manage your disease</li> </ul><p></p>
+
+<h5>Important Reminders:</h5> <ul>
+<li>Check your blood sugar several times per day, using simple, chemically treated test strips and a blood sugar meter. </li>
+<li>If you take too much insulin: Your blood sugar can become too low which is called hypoglycemia, prompting symptoms, including trembling, a rapid heartbeat, nausea, fatigue, weakness, and even loss of consciousness. </li>
+<li>If you take too little insulin: The major symptoms of diabetes such as weight loss, increased urination, thirst, and appetite, can return.</li> </ul>
+
+<h5>Links to Learn more about Diabetes:</h5>
+ 	<a href="https://www.choa.org/medical-services/diabetes">https://www.choa.org/medical-services/diabetes</a><br>
+	<a href="https://www.cdc.gov/diabetestv/youth.html ">https://www.cdc.gov/diabetestv/youth.html </a><br>
+ 	<a href="http://www.diabetes.org ">www.diabetes.org </a>
+
+</article></div>
+        </div>
+    </div>
+	  <div class="card">
+	    <div class="card-header" role="tab" id="headingThree1">
+	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1"> 	Seizures </a> </h5>
+        </div>
+	    <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1">
+	      <div class="card-body"><article><p>Seizures are caused by a sudden surge of electrical activity in the brain. A seizure usually affects how a person looks or acts for a short time. Someone having a seizure might collapse, shake uncontrollably, or even just stare into space. All of these are brief disturbances in brain function, often with a loss of or change in consciousness. </p>
+
+<h5>Seizure Basics</h5>
+<p>Usually, electrical activity in the brain involves neurons in different areas sending signals at different times. During a seizure, many neurons fire all at once. This abnormal electrical activity can cause different symptoms depending on the part of the brain involved, including unusual sensations, uncontrollable muscle spasms, and loss of consciousness. People with epilepsy have repeated seizures. </p> <br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/frhzr8_spNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h5>Epilepsy tips:</h5>
+<ul><li>Take medicine as prescribed</li>
+	<li>Avoid triggers (such as excessive stress, lack of sleep, antihistamine drugs)</li>
+	<li>Get help for any learning or behavior problems</li>
+	<li>See the neurologist as recommended </li>
+</ul>
+
+<h5>Safety Tips for people Epilepsy </h5>
+
+<strong>General Safety</strong>
+
+<p>Arrange your home, and if possible, work or study space, to be safe should you have a seizure. For example, pad sharp corners, use non-slip carpet, avoid scatter rugs, and put barriers in front of fireplaces or hot stoves. If having a seizure during a recreational activity could lead to injury or harm, avoid the activity. Use common sense. Talk with your medical team for individual advice and precautions. Plan for what you and your family should do during a seizure. Create your own Seizure Response Plan so others know what to do if you have a seizure and how to prevent emergencies. </p>
+
+<strong>Driving</strong>
+<ul>
+<li>Do not drive if you are having seizures or side effects that affect your ability to be safe on the road! </li>
+<li>Be honest with your doctor about your seizures. Safety comes first! </li>
+<li>Be honest with the DMV. It may protect you legally if problems occur later. </li></ul>
+
+<strong>Water Safety</strong>
+<ul>
+<li>Use common sense. If you do swim, use a buddy system. Wear a life jacket with any water activities. </li>
+<li>Make sure someone is around that knows how to swim, has lifesaving skills, and knows how to respond to seizures. </li>
+<li>Take showers instead of baths. If seizures are frequent or you tend to fall, use a shower chair and a flexible shower hose. Or sit on the bottom of an unfilled tub to shower instead of standing. </li></ul>
+
+<strong>Fire Safety</strong>
+<ul>
+<li>If you have uncontrolled seizures, be very careful around heat or flames. </li>
+<li>Put guards on open fireplaces, wood stoves or radiators. </li>
+<li>Don’t smoke or use matches when you’re alone. A fire could start if you drop it during a seizure.</li> </ul>
+
+<strong>Medication Safety</strong>
+<ul>
+<li>Know the main side effects of your seizure medicines. Talk to your doctor or nurse about safety risks of the medicines you take.</li>
+<li>Be especially careful if you take a medicine that can affect your balance, coordination, walking or vision. These problems can cause people to fall or injure themselves. </li>
+<li>Be aware that some side effects occur from interactions between your seizure medicines or with other ones you take. Any medicine, even over-the-counter and herbal products or supplements can cause problems. Some foods (for example grapefruit juice) can affect medicine levels and lead to too much medicine in the blood. </li></ul>
+
+<strong>Georgia Driver Licensing Laws</strong>
+<ul>
+<li>A person with epilepsy may obtain a license to drive cars and trucks weighing less than 26,000 pounds if he or she has been seizure-free for 6 months. </li>
+<li>A person who has only nocturnal seizures may be eligible for a limited license for daylight driving only even if he or she has been seizure-free for less than 6 months.  </li>
+<li>The Department of Driver Services may require periodic medical reports as a condition of licensing. </li> </ul>
+
+<h5>Links to more information:</h5>
+<a href="https://www.cdc.gov/epilepsy/communications/features/firstaid.html">https://www.cdc.gov/epilepsy/communications/features/firstaid.html</a><br>
+<a href="https://www.cdc.gov/epilepsy/managing-epilepsy/checklist.html ">https://www.cdc.gov/epilepsy/managing-epilepsy/checklist.html </a><br>
+<a href="https://www.choa.org/medical-services/neurosciences/epilepsy">https://www.choa.org/medical-services/neurosciences/epilepsy</a><br><br>
+
+Reference: <a href="https://www.epilepsy.com/learn/seizure-first-aid-and-safety">https://www.epilepsy.com/learn/seizure-first-aid-and-safety</a>
+
+ </article>
+</div>
+        </div>
+    </div>
+	  <div class="card">
+	    <div class="card-header" role="tab" id="headingFour1">
+	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseFour1" role="button" aria-expanded="false" aria-controls="collapseFour1"> 	Hyperthyroidism </a> </h5>
+        </div>
+	    <div id="collapseFour1" class="collapse" role="tabpanel" aria-labelledby="headingFour1" data-parent="#accordion1">
+	      <div class="card-body"><article><p>The thyroid gland is a butterfly-shaped gland that is located in the lower front of the neck, just above the collarbone. The role of the thyroid is to make thyroid hormones, which are released into the blood and then carried to every tissue in the body. In children, thyroid hormone helps to ensure that growth and development occur normally, and that the body’s energy, metabolism, heart, muscles, and other organs are working properly. Hyperthyroidism refers to a disease in which there is excessive amount of thyroid hormone in the blood. This is generally caused by overproduction or release of thyroid hormone by the thyroid gland.  </p><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iNrUpBwU3q0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><br>
+
+<h5>Signs and symptoms of hyperthyroidism</h5>
+<ul>
+<li>Enlargement of the thyroid gland </li>
+<li>Weight loss </li>
+<li>Excessive sweating and feeling too warm when others are comfortable </li>
+<li>Rapid heart rate and palpitations</li>
+<li>Poor school performance </li>
+<li>Mood swings, including irritability </li>
+<li>Difficulty sleeping </li>
+<li>Bulging or prominence of the eyes </li></ul>
+
+<h5>Treatment of hyperthyroidism</h5>
+
+<strong>Antithyroid medications</strong>
+<p>The most common method of treatment of hyperthyroidism is administration of antithyroid medication, which stops the thyroid gland from making and releasing thyroid hormone. The drug of choice is methimazole. Methimazole can be associated with side effects including an itchy skin rash (hives), and rarely joint and muscle pains and aches, jaundice (skin and eye yellowing from a liver problem), and a low white blood cell count, which might make it hard to fight infection. If one of these side effects occurs, another form of treatment must be used. This medication may control the disease but will not cure it. </p>
+
+<strong>Radioactive Iodine:</strong>
+
+ <p>Radioactive iodine is safe to use as a treatment in young people.  </p>
+
+<strong>Surgery:</strong>
+
+<p>Surgical removal of the thyroid gland is also an effective way to treat hyperthyroidism. Risks include damage to the parathyroid glands, which are usually attached to the thyroid and control calcium in the blood, or damage to the recurrent laryngeal nerve, which is nearby and could lead to a hoarse voice.
+Beta Blockers.  In the early stage of treatment, beta blockers like propranolol or atenolol are used to increase the comfort level of the young person with hyperthyroidism. These drugs will not affect thyroid hormone levels but can help in general well-being by controlling symptoms like palpitations, tremors, and anxiety as well as rapid heart rate. </p>
+
+<h5>Hyperthyroidism Nutrition tips:</h5>
+<p>Foods to eat if you have hyperthyroidism:  Low-iodine foods
+The mineral iodine plays a key role in making thyroid hormones. A lowiodine diet helps to reduce thyroid hormones. Add these foods to your daily diet: </p><ul></ul>
+<li>non-iodized salt </li>
+<li>coffee or tea (without milk or dairy- or soy-based creamers) </li>
+<li>egg whites </li>
+<li>fresh or canned fruit </li>
+<li>unsalted nuts and nut butters </li>
+<li>homemade bread or breads made without salt, dairy, and eggs </li>
+<li>popcorn with non-iodized salt </li>
+<li>oats </li>
+<li>potatoes </li>
+<li>honey </li>
+<li>maple syrup </li>
+<li>Cruciferous vegetables </li><br>
+
+<p>Several nutrients are essential for thyroid health and to balance thyroid hormone production.</p>
+<p><strong>Iron:</strong><br>
+
+Iron is important for many vital bodily functions, including thyroid health. This mineral is needed for blood cells to carry oxygen to every cell in your body. Low levels of iron are linked to hyperthyroidism. Get plenty of iron in your diet with foods such as:</p><ul>
+<li>dried beans </li>
+<li>green leafy vegetables </li>
+<li>lentils </li>
+<li>nuts </li>
+<li>poultry, such as chicken and turkey </li>
+<li>red meat </li>
+<li>seeds </li>
+<li>whole grains </li></ul>
+
+
+<p><strong>Selenium:</strong> <br>
+
+Selenium-rich foods may help to balance thyroid hormone levels and protect your thyroid from disease. Selenium helps to prevent cell damage and keep your thyroid and other tissues healthy.  Good food sources of selenium include: </p><ul>
+<li>Brazil nuts </li>
+<li>mushrooms </li>
+<li>tea </li>
+<li>meat, such as beef and lamb </li>
+<li>rice </li>
+<li>oat bran </li>
+<li>poultry, such as chicken and turkey </li>
+<li>sunflower seeds  </li></ul>
+
+<p><strong>Zinc:</strong> <br>
+
+Zinc helps you use food for energy. This mineral also keeps your immune system and thyroid healthy. Food sources of zinc include: </p><ul>
+<li>beef </li>
+<li>chickpeas </li>
+<li>cocoa powder </li>
+<li>cashews </li>
+<li>mushrooms </li>
+<li>pumpkin seeds </li>
+<li>lamb </li></ul>
+
+<p><strong>Calcium and vitamin D:</strong> <br>
+
+Hyperthyroidism causes weak and brittle bones. Bone mass may be restored with treatment. Vitamin D and calcium are necessary for building healthy bones.
+Calcium-rich foods include: </p><ul>
+<li>spinach </li>
+<li>collard greens </li>
+<li>white beans </li>
+<li>kale </li>
+<li>okra </li>
+<li>calcium-fortified orange juice </li>
+<li>almond milk </li>
+<li>calcium-fortified cereals</li> </ul>
+
+<p><strong>Vitamin D is found in these low-iodine foods:</strong> <br></p><ul>
+<li>vitamin D-fortified orange juice </li>
+<li>vitamin D-fortified cereals </li>
+<li>beef liver </li>
+<li>mushrooms </li>
+<li>fatty fish </li> </ul>
+
+<p><strong>Healthy fats:</strong> <br>
+
+Fats that are from whole foods and largely unprocessed may help reduce inflammation. This helps to protect thyroid health and balance thyroid hormones. Nondairy fats are important in a low-iodine diet. These include: </p><ul>
+<li>flaxseed oil </li>
+<li>olive oil </li>
+<li>avocado oil </li>
+<li>coconut oil </li>
+<li>sunflower oil </li>
+<li>avocado </li>
+<li>unsalted nuts and seeds </li> </ul>
+
+<p><strong>Spices:</strong> <br>
+
+Some spices and herbs have anti-inflammatory properties to help protect and balance thyroid function. Add flavor and a dose of antioxidants to your daily meals with: </p><ul>
+<li>turmeric </li>
+<li>green chilies </li>
+<li>black pepper </li></ul>
+
+<h5>Foods to avoid if you have hyperthyroidism</h5>
+<p><strong>Excess iodine</strong> (Eating too many iodine-rich or iodine-fortified foods may lead to hyperthyroidism or worsen it in some cases.)
+Seafood has the most iodine. Avoid the following commonly consumed seafood and seafood additives: </p><ul>
+<li>fish </li>
+<li>seaweed</li>
+<li>crabs </li>
+<li>lobster </li>
+<li>sushi </li></ul>
+
+<p><strong>Caffeine: </strong><br>
+
+Foods and beverages that contain caffeine, such as coffee, tea, soda, and chocolate, can make  the symptoms of hyperthyroidism worse and lead to increased anxiety, nervousness, irritability, and rapid heart rate. If caffeine has this effect on you, then avoiding or limiting your intake may be a good option. Try replacing caffeinated beverages with natural herbal teas, flavored water, or hot apple cider.
+</p></article></div>
+        </div>
+    </div>
+	  <div class="card">
+	    <div class="card-header" role="tab" id="headingFive1">
+	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseFive1" role="button" aria-expanded="false" aria-controls="collapseFive1">Hypothyroidism</a> </h5>
+        </div>
+	    <div id="collapseFive1" class="collapse" role="tabpanel" aria-labelledby="headingFive1" data-parent="#accordion1">
+	      <div class="card-body"><article><p>The thyroid gland is a butterfly-shaped gland that is located in the lower front of the neck, just above the collarbone. The role of the thyroid is to make thyroid hormones, which are released into the blood and then carried to every tissue in the body. In children, thyroid hormone helps to ensure that growth and development occur normally, and that the body’s energy, metabolism, heart, muscles, and other organs are working properly.  Hypothyroidism is an underactive thyroid gland. Hypothyroidism means that the thyroid gland can’t make enough thyroid hormone to keep the body running normally. People are hypothyroid if they have too little thyroid hormone in the blood. Common causes are autoimmune disease, such as Hashimoto’s thyroiditis, surgical removal of the thyroid, and radiation treatment. </p>
+
+<h5>Management:</h5>
+
+<p>Children with elevated TSH and low T4 levels are treated by replacing the amount of hormone that the child’s own thyroid can no longer make. The goal is to bring the T4 and TSH back to the normal range and restore the body’s normal functions (called ‘replacement’ therapy). The majority of patients can achieve normal thyroid hormone levels by taking levothyroxine (T4 only) pills once daily.  The ideal way to take levothyroxine is on an empty stomach, at least 30 minutes before eating. However, the most important thing is to take levothyroxine in a consistent way each day, at a time that is easy to remember, and to avoid missing doses. If a dose is missed, it should be made up as soon as you remember. There are some other medications that should not be taken at the same time as levothyroxine, including: calcium or iron supplements or vitamins. </p>
+<p>
+When hypothyroidism is caused by Hashimoto’s thyroiditis, it is usually permanent. Hypothyroidism caused by surgical removal of the thyroid or radiation treatment is also lifelong. Hypothyroidism due to certain other causes (like medications or iodine) may go away if the cause can be addressed. With the exception of needing to take a pill once daily and getting labs checked, there are no restrictions to everyday life and activities.  Once you have established the thyroxine dose right for you, TSH tests are necessary about once a year. You need to make an appointment to discuss with your physician if you: </p> <ul>
+<li>Feel a change in your symptoms. If your TSH turns out to be high, hypothyroidism is probably causing your symptoms. But if your TSH is normal, it means something else is causing your symptoms  </li>
+<li>Want to change your thyroxine dose or brand, or change to taking your pills with or without food  </li>
+<li>Gain or lose a lot of weight without changing your diet or exercise routine. For some people, even a change of 10 pounds or less can signal that something is wrong  </li>
+<li>Start or stop taking a drug that can interfere with absorbing thyroxine, or you change your dose of such a drug (see "How your thyroxine dose is decided," above). For example, if you start taking estrogen in a birth control pill or in hormone replacement therapy, you may need to raise your dose. If you stop taking the drug, you may need to lower your dose </li>
+<li>Are not taking your thyroxine pill every day. It is very important to be truthful when telling your doctor how many pills you have missed. If you have missed pills but say that you have taken them as prescribed and if your TSH test is then high, your doctor may think that your hypothyroidism is getting worse and may raise your thyroxine dose </li>
+<li>Want to try to stop thyroxine treatment. If ever you think you are doing well enough not to need thyroxine treatment any longer, try it only under your doctor's close supervision. Rather than stopping your pills completely, you might ask your doctor to try lowering your dose. If your TSH increases, you will know that you need to continue treatment. You should never stop thyroxine treatment on your own. You must take your thyroxine every day, most likely for the rest of your life. </li></ul>
+
+<h5>Follow up care:</h5>
+<p>
+A TSH level should be checked 4 to 8 weeks after starting levothyroxine (T4) or after any change in levothyroxine dose. The goal of treatment is to keep the TSH and T4 in the normal range. How often these levels need to be checked depends on the age of the child. Older children can have these levels checked every 3-12 months until they have finished growing and going through puberty. Adults typically have levels checked once per year. </p>
+
+<p><strong>References:</strong>  <br>
+<a href="https://www.thyroid.org/hypothyroidism-children-adolescents/">https://www.thyroid.org/hypothyroidism-children-adolescents/</a><br>
+<a href="https://medlineplus.gov/hypothyroidism.html">https://medlineplus.gov/hypothyroidism.html</a>  <br>
+<a href="https://www.thyroid.org/wp-content/uploads/patients/brochures/Hypothyroidism_web_booklet.pdf">https://www.thyroid.org/wp-content/uploads/patients/brochures/Hypothyroidism_web_booklet.pdf</a></p>
+
+<h5>Nutrition education for Hypothyroidism: </h5>
+<p>
+Limit foods high in soy protein, because large amounts of soy might interfere with the absorption of thyroid hormone.
+Avoid excessive amounts of iodine, either in medications or supplements, as this could potentially alter your thyroid hormone level. Most iodine rich foods, such as iodized products or fish, are acceptable. Aim for a healthy diet that includes lots of fruits, vegetables, and whole grains.  Adopting a nutritious diet for your thyroid not only keeps you feeling good once your thyroid levels are normal, but it helps your digestive system function smoothly and your heart pump efficiently which supports healthy metabolism.  </p><br>
+
+<strong>Reference:</strong> <a href="https://www.health.harvard.edu/staying-healthy/healthy-eatingfor-a-healty-thyroid ">https://www.health.harvard.edu/staying-healthy/healthy-eatingfor-a-healty-thyroid </a><br>
+
+
+<strong>Links to more information about Thyroid disorders:</strong>   	<br>
+<a href="https://my.clevelandclinic.org/health/diseases/8541-thyroid-disease">https://my.clevelandclinic.org/health/diseases/8541-thyroid-disease</a>  <br>
+<a href="https://medlineplus.gov/thyroiddiseases.html">https://medlineplus.gov/thyroiddiseases.html</a><br>
+			  </article>
+</div>
+        </div>
+    </div>
+	  <div class="card">
+	    <div class="card-header" role="tab" id="headingSix1">
+	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseSix1" role="button" aria-expanded="false" aria-controls="collapseSix1">	Sickle Cell Disease  </a> </h5>
+        </div>
+	    <div id="collapseSix1" class="collapse" role="tabpanel" aria-labelledby="headingSix1" data-parent="#accordion1">
+	      <div class="card-body"><article><p>Sickle Cell Disease is a group of inherited red blood cell disorders that is present from birth. Healthy red blood cells are round and move easily through small blood vessels to carry oxygen throughout the body. However, in someone who has sickle cell disease, the red blood cells become hard and sticky, and have a C-shape, like a farmer’s sickle. The sickle cells die early, which causes a constant shortage of red blood cells called anemia. When sickle cells travel through small blood vessels, they get stuck and clog the blood flow. This can cause pain and other serious problems, such as infection, lung-related complications, and stroke. </p>
+
+<strong>Reference:</strong> <a href="https://www.cdc.gov/dotw/sickle-cell-disease/">https://www.cdc.gov/dotw/sickle-cell-disease/</a><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hRnrIpUMyZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><br>
+
+<h5>Managing Sickle Cell Disease:</h5>
+ <p>
+1.&nbsp;&nbsp;Get Routine check-ups <br>
+
+Sickle cell disease is a complex disease. Good quality medical care from doctors and nurses who know a lot about the disease can help prevent some serious problems. Often the best choice is a hematologist (a doctor who specializes in blood diseases) working with a team of specialists. Regular health checkups with a primary care doctor can help prevent some serious problems. Children and adults from 2 years of age or older should see a doctor at least once every year. </p>
+<p>
+2.&nbsp;&nbsp;Prevent Infections <br>
+Common illnesses, like the flu, can quickly become dangerous for a child with sickle cell disease. The best defense is to take simple steps to help prevent infections. </p>
+ <p>
+3.&nbsp;&nbsp;Learn Healthy Habits – Drink Enough Water!  <br>
+People with sickle cell disease should drink 8 to 10 glasses of water every day and eat healthy food. Try not to get too hot, too cold, or too tired.
+Children can, and should, participate in physical activity to help stay healthy. However, it’s important that they don’t overdo it, rest when tired, and drink plenty of water. </p>
+
+<p>Go to an emergency room or urgent care facility right away for:<br></p><ul>
+<li>Fever above 101° F </li>
+<li>Difficulty breathing </li>
+<li>Chest pain </li>
+<li>Abdominal (belly) swelling </li>
+<li>Severe headache </li>
+<li>Sudden weakness or loss of feeling and movement </li>
+<li>Seizure </li>
+<li>Painful erection of the penis that lasts more than 4 hours</li> </ul><p></p>
+
+<p>Call a doctor right away for: <br></p><ul>
+<li>Pain anywhere in the body that will not go away with treatment at home </li>
+<li>Any sudden problem with vision </li></ul><p></p>
+
+Reference: <a href="https://www.cdc.gov/ncbddd/sicklecell/healthyliving-emer-guide.html
+ ">https://www.cdc.gov/ncbddd/sicklecell/healthyliving-emer-guide.html </a><br><br>
+
+<p>Links to more information about sickle cell disease: </p>
+ 	<a href="https://www.choa.org/medical-services/cancer-and-blooddisorders/blood-disorders/sickle-cell-disease">https://www.choa.org/medical-services/cancer-and-blooddisorders/blood-disorders/sickle-cell-disease</a> <br>
+	<a href="https://www.cdc.gov/ncbddd/sicklecell/facts.html">https://www.cdc.gov/ncbddd/sicklecell/facts.html</a>
+</article></div>
+        </div>
+    </div>
+	  <div class="card">
+	    <div class="card-header" role="tab" id="headingSeven1">
+	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseSeven1" role="button" aria-expanded="false" aria-controls="collapseSeven1"> Cystic Fibrosis  </a> </h5>
+        </div>
+	    <div id="collapseSeven1" class="collapse" role="tabpanel" aria-labelledby="headingSeven1" data-parent="#accordion1">
+	      <div class="card-body"><article><p>Cystic fibrosis is a progressive, genetic disease that causes persistent lung infections and limits the ability to breathe over time. Children with CF also suffer from digestive problems that prevent the body from breaking down and absorbing food, leading to inadequate growth and nutrition. </p><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/omkp2VJTE3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><br>
+
+Reference: <a href="https://www.cff.org/What-is-CF/About-Cystic-Fibrosis/ ">https://www.cff.org/What-is-CF/About-Cystic-Fibrosis/ </a><br>
+
+<p><strong>Cystic Fibrosis Management Basics</strong> <br></p><ul>
+<li>Maintaining normal weight is very important, as it has been shown to be linked to lung health. </li>
+<li>Take in adequate calories. Sometimes feeding tubes are necessary. </li>
+<li>You may also need to take in more salt, especially if you are sweating. An appropriate enzyme and vitamin dose is also very important in the management of CF. </li>
+<li>Perform daily airway clearance therapy (ACT) and you may need to use inhaled medications or even antibiotics when necessary.  </li>
+<li>Exercise and stay active for your lung health.  </li>
+<li>Treat any respiratory tract infections are treated promptly.  </li>
+<li>If you think you have an infection, call your doctor, so you can receive medication. </li></ul><br>
+
+<p>Reference: American Lung Association. (2019). Living with Cystic Fibrosis. Retrieved from <a href="https://www.lung.org/lung-health-anddiseases/lung-disease-lookup/cystic-fibrosis/living-with-cysticfibrosis.html ">https://www.lung.org/lung-health-anddiseases/lung-disease-lookup/cystic-fibrosis/living-with-cysticfibrosis.html </a></p>
+
+<strong>Managing Cystic Fibrosis in College (scholarships):</strong>
+
+<p>If you would like help finding scholarships, call Cystic Fibrosis Foundation Compass at 844-COMPASS (844-266-7277) Monday through Friday, 9
+	a.m. until 7 p.m. ET, or email <a href="mailto:compass@cff.org">compass@cff.org</a>. </p>
+
+<p>Links to more information about Cystic Fibrosis:
+			  <a href="https://www.cff.org/Life-With-CF/Transitions/Managing-My-CF-in-College/">https://www.cff.org/Life-With-CF/Transitions/Managing-My-CF-in-College/</a>
+			  <a href="https://www.cff.org/What-is-CF/About">https://www.cff.org/What-is-CF/About</a>
+			  </p></article></div>
+        </div>
+    </div>
+	  <div class="card">
+	    <div class="card-header" role="tab" id="headingEight1">
+	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseEight1" role="button" aria-expanded="false" aria-controls="collapseEight1"> Gastrointestinal Disorders   </a> </h5>
+        </div>
+	    <div id="collapseEight1" class="collapse" role="tabpanel" aria-labelledby="headingEight1" data-parent="#accordion1">
+	      <div class="card-body"><article><p>(More Information coming soon after I meet with a Gastro-specialist pediatric office for more information…) </p>
+
+<p>Will have 3 types of Gastrointestinal disorders: </p> <ol>
+<li>Chron’s Disease </li>
+<li>Celiac Disease </li>
+<li>Irritable Bowel Disease </li></ol>  </article>
+</div>
+        </div>
+    </div>
+  </div>
+  </html>

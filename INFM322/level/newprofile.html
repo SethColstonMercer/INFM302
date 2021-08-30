@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Project MyNextLVL</title>
+  </head>
+  <body>
+    <style>
+      .navbar {
+      text-align: center;
+      background-color: #f89318;
+    }
+    .nav {
+      text-align: justify;
+    }
+    .h1 {
+      font-size: 20px;
+    }
+    img {
+      align-items: center;
+    }
+
+    .mainlogo {
+      width: 850px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav li{
+      list-style:none;
+      }
+    h2 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    h1 {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h3 {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .dropdown-submenu {
+    color: #f89318;
+    position: relative;
+    background-color: #ffffff;
+}
+  .dropdown-submenu>.dropdown-menu {
+    color: #f89318;
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    background-color: #ffffff;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 6px;
+}
+  .dropdown-submenu:hover>.dropdown-menu {
+    color: #f89318;
+    display: block;
+    background-color: #ffffff;
+    font-weight: 600;
+}
+  .dropdown-submenu>a:after {
+    color: #f19318;
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+  .dropdown-submenu:hover>a:after {
+    color: #f19318;
+    background-color: #ffffff;
+}
+  .dropdown-submenu.pull-left {
+    color: #f19318;
+    float: none;
+    background-color: #ffffff;
+}
+  .dropdown-submenu.pull-left>.dropdown-menu {
+    color: #f19318;
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: #ffffff;
+}
+  .footertext {
+    color:  #ffffff;
+  }
+    </style>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+<a class="nav-link" href="signedin.html"><img src="logo.jpg.png" width="83" alt="Logo" class="logoborder centerlogo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         <li class="nav-item">
+              <a class="nav-link" href="signedin.html">Home</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="hippa.html">HIPAA Regulations</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Information/Resources
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="conditionsinfo.html">General Information for Conditions</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="localclinics.html">Medical Clinics</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="medicaled.html">Medical Education and Links</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="localsupport.html">Local Resources</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                      </ul>
+                    </li>
+					</li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Your Profile</a>
+				  </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lvlindex.html">Logout</a>
+        </li>
+      </div>
+    </nav>
+</div>
+
+<div class="row">
+        <div class="col-xl-4">
+               <form>
+                 <p><img src="profileicon.jpg" width="200" height="200" alt="">Add Your Profile Picture
+			     </p><center><input type="button" name="button" id="button" value="Browse for Image" style="background-color: darkorange">
+                 or
+					 <input type="button" name="button2" id="button2" value="Use Your Camera" style="background-color: limegreen"></center><p></p>
+
+                 <br>
+
+				   <p></p><center><b>Height</b></center>
+                 <div class="form-group" style="padding-left: 150px; padding-right: 150px">
+		      <label for="number">Feet:</label>
+                   <input type="number" name="number" id="number"><br>
+                   <label for="number">Inches:</label>
+					 <input type="number" name="number" id="number"><p></p>
+                   <p></p><center><b><label for="number">Weight in Lbs:</label></b></center>
+                   <input type="number" name="number" id="number">
+                 <p></p>
+				   <p><b>Gender</b><br><label>
+                     <input type="checkbox" name="CheckboxGroup0" value="checkbox" id="CheckboxGroup0_0">
+                   Male</label>
+                   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup0" value="checkbox" id="CheckboxGroup0_1">
+                     Female</label>
+                   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup0" value="checkbox" id="CheckboxGroup0_2">
+                     Other</label></p>
+                 <p>&nbsp;</p></div>
+		    <br>
+			</form></div>
+
+        <div class="col-xl-4"><form <p=""><strong>Allergies (Check all that apply)</strong><p></p>
+                 <p><label>
+                     <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_0">
+                   Pollen</label>
+                   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_1">
+                     Peanuts</label>
+                   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_2">
+                     Seafood</label>
+                   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_3">
+                     Gluten</label>
+                   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_4">
+                     Chocolate</label>
+                   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_5">
+                     Cats</label>
+                   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_6">
+                     Dogs</label>
+                 </p>
+
+                 <p>
+                   <label for="textarea">Please list allergies not on the list here:</label>
+                   <textarea name="textarea" id="textarea"></textarea>
+                 </p></form></div>
+        <div class="col-xl-4"><p><strong>Medical Condition(s) (Check all that apply)</strong></p>
+          <p>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_0">
+                     Diabetes
+                   </label><br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_1">
+                     Asthma
+                   </label>
+                   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_2">
+                   Cerebral Palsy
+				   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_3">
+                     Gastrointestinal disorders
+				   </label><br>
+					 <label>
+                     <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_4">
+                     Spina Bifida</label>
+                   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_5">
+					   Hyperthyroidism</label><br>
+					 <label>
+                     <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_6">
+                     Orthopedic disorders
+                   </label>
+                   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_7">
+                     Hypothyroidism
+				   </label><br>
+					 <label>
+                     <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_8">
+                     Scoliosis</label><br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_9">
+                   Sickle Cell Anemia
+				   </label><br>
+					 <label>
+                   <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_10">
+                   Chronic Lung Disorders
+                   </label>
+                   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_11">
+                     Cystic Fibrosis
+				   </label><br>
+					 <label>
+                     <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_12">
+                     Neurological Disorders
+                   </label>
+                   <br>
+                   <label>
+                     <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup2_13">
+                     Autism
+				   </label><br>
+					 <label>
+                     <input type="checkbox" name="checkbox7" id="checkbox7">
+		    Disorders (other than corrective lenses)</label><br>
+ 		</label></p>
+			<center><div class="btn-lg">
+				<button input="" type="button" onclick="window.location.href = 'newprofile2.html';" style="background-color: darkorange">Next Page</button>
+
+
+					</div></center>
+		</div>
+      </div>

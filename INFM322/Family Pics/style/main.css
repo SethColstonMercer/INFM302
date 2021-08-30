@@ -1,0 +1,43 @@
+body{
+  background-image: url("../pics/new.jpg");
+
+}
+header{
+  background-image:url("../pics/whitegrey.jpg");
+  padding: 10px 0px;
+  text-align: center;
+  font-family: sans-serif;
+}
+nav{
+  background-color: #a6a6a6;
+  width: 18%;
+  float: left;
+  font-family: sans-serif;
+padding: 10px;
+padding-top: 5px;
+}
+a{
+display: block;
+color: #ffffff;
+background-color: #404040;
+text-decoration: none;
+padding-bottom: 20px;
+	padding-top: 20px;
+}
+nav li{
+  list-style:none;
+  padding-right: 30px;
+  text-align: center;
+ }
+section {
+  text-align: justify;
+  font-family: sans-serif;
+}
+.center {
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 50%;
+}

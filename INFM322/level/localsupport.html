@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Project MyNextLVL</title>
+  </head>
+  <body>
+    <style>
+      .navbar {
+      text-align: center;
+      background-color: #f89318;
+    }
+    .nav {
+      text-align: justify;
+    }
+    .h1 {
+      font-size: 20px;
+    }
+    img {
+      align-items: center;
+    }
+
+    .mainlogo {
+      width: 850px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav li{
+      list-style:none;
+      }
+    h2 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    h1 {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h3 {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .dropdown-submenu {
+    color: #f89318;
+    position: relative;
+    background-color: #ffffff;
+}
+  .dropdown-submenu>.dropdown-menu {
+    color: #f89318;
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    background-color: #ffffff;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 6px;
+}
+  .dropdown-submenu:hover>.dropdown-menu {
+    color: #f89318;
+    display: block;
+    background-color: #ffffff;
+    font-weight: 600;
+}
+  .dropdown-submenu>a:after {
+    color: #f19318;
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+  .dropdown-submenu:hover>a:after {
+    color: #f19318;
+    background-color: #ffffff;
+}
+  .dropdown-submenu.pull-left {
+    color: #f19318;
+    float: none;
+    background-color: #ffffff;
+}
+  .dropdown-submenu.pull-left>.dropdown-menu {
+    color: #f19318;
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: #ffffff;
+}
+  .footertext {
+    color:  #ffffff;
+  }
+    </style>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+<a class="nav-link" href="lvlindex.html"><img src="logo.jpg.png" width="83" alt="Logo" class="logoborder centerlogo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         <li class="nav-item">
+              <a class="nav-link" href="signedin.html">Home</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="hippa.html">HIPAA Regulations</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Information/Resources
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="conditionsinfo.html">General Information for Conditions</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="localclinics.html">Medical Clinics</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="medicaled.html">Medical Education and Links</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="localsupport.html">Local Resources</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                      </ul>
+                    </li>
+					</li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Your Profile</a>
+				  </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lvlindex.html">Logout</a>
+        </li>
+        </form>
+      </div>
+    </nav>
+</div>
+		<p><strong>General Support Groups for all Adolescents:</strong>
+  </p>
+<p>Transitional Youth Peer Center (Offers peer support for education, employment and community life)<br>
+1381 Metropolitan Parkway  <br>
+Atlanta, Georgia 30310  <br>
+Email: infor@gpsn.org  <br>
+Contact numbers: 1 (844) 278-6945, or (404) 758-4500  <br>
+	Website: <a href="http://gpsn.">http://gpsn.org/</a> </p>
+
+<p>Atlanta Center for Self Sufficiency/ACSS- Atlanta Center for Self
+Sufficiency/ACSS - Cafe 458 Life Stabilization Program <br>
+460 Edgewood Ave.  <br>
+Atlanta, GA 30312  <br>
+(404) 874-8001 Main Client Number  <br>
+(404) 446-8001 Cafe 458 Weekend Brunch  <br>
+(404) 873-3489 Fax <br>
+	<a href="http://atlantacss.org/ ">http://atlantacss.org/ </a></p>
+
+
+<p>Parent to Parent of Georgia, Inc. (Youth resources available)  <br>
+3070 Presidential Pkwy. <br>
+Ste. 130 <br>
+Atlanta, GA 30340  <br>
+(770) 451-5484 Main Client Number <br>
+(800) 229-2038 Toll Free Line  <br>
+(770) 458-4091 Fax <br>
+	<a href="https://www.p2pga.">https://www.p2pga.org/ </a></p>
+
+
+		<p><strong>Asthma:</strong></p>
+<p>Camp Breathe Easy  <br>
+<a href="http://www.campbr eatheeasy.com/">http://www.campbr eatheeasy.com/</a><br>
+Contact Camp Director, Lauren Schmitt  <br>
+<a href="mailto:LSchmitt@CampTwinLakes.org">LSchmitt@CampTwinLakes.org</a> to learn about Financial Aid opportunities. <br>
+Contact CHOA to learn more about other community outreach programs, <br>
+Sydney Trapp at 404-785-7240.  </p>
+
+ <p>
+DeKalb County Board of Health  <br>
+404.294.3700   <br>
+<a href="https://www.dekalbhealth.net/">https://www.dekalbhealth.net/</a> <br>
+Asthma Management 404.508.7845  <br>
+Division of Environmental Health  <br>
+	 404.508.7900  <br></p>
+
+
+<p><strong>Autism:</strong></p>
+<p>Young Adults with Autism/Asperger’s Atlanta  <br>
+Emory Autism Center:   <br>
+Teen and Adult Assessment Program (TAAP) <br>
+<a href="https://redcap.emory.edu/surveys/?s=EYXETKYY3P">https://redcap.emory.edu/surveys/?s=EYXETKYY3P</a>
+myLIFE program:<br>
+contact Toni Thomas @ <a href="mailto:mylife.admissions@emory.edu">mylife.admissions@emory.org</a> or 404-727-8350  </p>
+
+
+<p><strong>Cancer:</strong></p>
+<p>Camp Sunshine <br>
+1850 Clairmont Rd.  <br>
+Decatur, GA 30033  <br>
+(404) 325-7979 Main Client Number <br>
+(404) 325-7929 Fax  <br>
+<a href="https://www.mycampsunshine.com/">https://www.mycampsunshine.com/</a></p>
+
+
+<p>Cancer Support Community Atlanta  <br>
+5775 Peachtree Dunwoody Rd. <br>
+Ste. 225  <br>
+Atlanta, GA 30342  <br>
+(404) 843-1880 Main Client Number <br>
+(404) 843-1780 Fax  <br>
+<a href="https://www.cscatlanta.org/">https://www.cscatlanta.org/</a> </p>
+
+
+<p>Georgia Ovarian Cancer Alliance
+6065 Roswell Rd. <br>
+Ste. 512  <br>
+Atlanta, GA 30328  <br>
+(404) 255-1337 Main Client Number <br>
+<a href="http://www.gaovariancancer.org/">http://www.gaovariancancer.org/</a> </p>
+
+
+<p>Leukemia &amp; Lymphoma Society  <br>
+2859 Paces Ferry Rd SE <br>
+Ste. 725 <br>
+Atlanta, GA 30339 <br>
+(404) 720-7900 Main Client Number <br>
+(800) 399-7312 Toll Free Line <br>
+(404) 720-7878 Fax  <br>
+<a href="https://www.lls.org/georgia">https://www.lls.org/georgia</a> </p>
+
+
+<p><strong>Youth with Breast Cancer:</strong>  </p>
+<p>Young Survival Coalition, Inc./YSC  <br>
+2300 Henderson Mill Rd. <br>
+Ste. 311  <br>
+Atlanta, GA 30345 <br>
+(646) 257-3030 Main Client Number <br>
+(877) 972-1011 Toll Free Line  <br>
+<a href="https://www.youngsurvival.org/">https://www.youngsurvival.org/</a> </p>
+
+
+<p><strong>Cystic Fibrosis:</strong></p>
+<p>Cystic Fibrosis Foundation - Georgia Chapter</p>
+57 Executive Park S. <br>
+Ste. 380 		<br>
+Atlanta, GA 30329  <br>
+(404) 325-6973 Main Client Number <br>
+(800) 344-4823 Toll Free Line  <br>
+(404) 325-7921 Fax  <br>
+<a href="http://www.cff.org/Chapters/georgia/">http://www.cff.org/Chapters/georgia/</a><br>
+Email: <a href="mailto:georgia@cff.org">georgia@cff.org</a><br>
+Executive Director:  Molly Taggart   <p></p>
+
+
+<p><strong>Diabetes:</strong></p>
+<p>Juvenile Diabetes Research Foundation - Georgia Chapter  <br>
+3525 Piedmont Rd., NE <br>
+Ste. 300  Bldg. 6  <br>
+Atlanta, GA 30305  <br>
+(404) 420-5990 Main Client Number  <br>
+(404) 420-5995 Fax  <br>
+<a href="https//www.jdrf.org/">https://www.jdrf.org/</a> </p>
+
+
+<p><strong>Camp Kudzu (camps/education/support)</strong></p>
+<p>Financial aid available
+<a href="https://www.campkudzu.org/about-us/">https://www.campkudzu.org/about-us/</a><br>
+5885 Glenridge Drive, Suite 160 Atlanta, <br>
+GA 30328  <br>
+PHONE:  833-99-KUDZU  (833-995-8398) <br>
+EMAIL:  <a href="mailto:info@campkudzu.org">info@campkudzu.org</a>  </p>
+
+
+<p><strong>JDRF Type 1 Diabetes Support Group and Resource center (multiple locations)</strong></p>
+<a href="https://www.jdrf.org/georgia/p/local-support-groups/ ">https://www.jdrf.org/georgia/p/local-support-groups/ </a><br>
+
+
+<p>JDRF Grandparents Care  <br>
+Serving: Grandparents of a type 1 child or adult  <br>
+Shirley Borenstein  <br>
+404-422-7445  <br>
+<a href="mailto:Borensts@bellsouth.net">Borensts@bellsouth.net</a>  </p>
+
+
+<p>JDRF Midtown Atlanta/Emory Area  <br>
+Serving:  Midtown, Atlanta, Emory, Inman Park, Little Five Points and North Druid Hills areas  <br>
+Lisa Beatty Klumok 404-226-5931<br>
+<a href="mailto:lsbklumok@comcast.net">lsbklumok@comcast.net</a>  </p>
+
+
+<p>JDRF Sandy Springs/Buckhead/Brookhaven  <br>
+Serving:  Brookhaven, Buckhead, Sandy Springs, Chamblee, and Dunwoody  <br>
+Mary Beth Verlander 917-741-1917 <br>
+<a href="mailto:marybethav@yahoo.com">marybethav@yahoo.com</a> </p>
+
+<p><strong>Down Syndrome:</strong></p>
+<p>Down Syndrome Association of Atlanta <br>
+2221 Peachtree Rd., NE Ste. D-226 Atlanta, GA 30309  <br>
+(404) 320-3233 Main Client Number
+<a href="http://www.dsaatl.org">http://www.dsaatl.org</a>dsaatl.org/ </p>
+
+
+<p><strong>Gastrointestinal Disorders: </strong></p>
+
+<p>Crohn's &amp; Colitis Foundation of America, Inc. - Georgia Chapter <br>
+2751 Buford Hwy. <br>
+Ste. 780  <br>
+Atlanta, GA 30324 <br>
+(404) 982-0616 Main Client Number <br>
+(404) 982-0656 Fax  <br>
+<a href="https://www.crohnscolitisfoundation.org/chapters/georgia">https://www.crohnscolitisfoundation.org/chapters/georgia</a> </p>
+
+
+<p><strong>Hearing Impaired: </strong> </p>
+
+<p>Georgia Center of the Deaf and Hard of Hearing /GCDHH  <br>
+4151 Memorial Dr. <br>
+Ste. 103B  <br>
+Decatur, GA 30032 <br>
+(404) 292-5312 Main Client Number  <br>
+Also TDD Line  <br>
+(404) 299-3642 Fax  <br>
+	<a href="http://www.gcdhh.org ">http://www.gcdhh.org </a></p>
+
+
+<p>Hearing Loss Association of America - Georgia State Office  <br>
+2820 Peachtree Rd., NW  Cathedral Towers  <br>
+Atlanta, GA 30305  <br>
+(301) 657-2248 National Main Number  <br>
+(404) 636-0288 Main Client Number  <br>
+<a href="http://www.hearingloss.org/">http://www.hearingloss.org/</a>   <br>
+
+</p><p><strong>Hematologic Disorders:  </strong></p>
+
+<p>Hemophilia of Georgia, Inc.  <br>
+8800 Roswell Rd. <br>
+Ste. 170  <br>
+Atlanta, GA 30350 <br>
+(770) 518-8272 Main Client Number  <br>
+(770) 518-3310 Fax  <br>
+<a href="http://www.hog.org">http://www.hog.org</a> </p>
+
+
+<p><strong>Sickle Cell Disease:</strong>   </p>
+
+<p>Sickle Cell Foundation of Georgia, Inc. 2391 <br>
+Benjamin E. Mays Dr., SW  <br>
+McGhee/King Bldg.  <br>
+Atlanta, GA 30311  <br>
+(404) 755-1641   Main Client Number  <br>
+(404) 755-7955 Fax  <br>
+	<a href="http://www.sicklecellga.org">http://www.sicklecellga.org</a></p>
+
+
+<p><strong>Seizure Disorders:</strong></p>
+
+<p>Epilepsy Foundation of Georgia (peer support groups at various locations)  <br>
+6065 Roswell Rd., NE <br>
+Ste. 770  <br>
+Atlanta, GA 30328  <br>
+(404) 527-7155 Main Client Number  <br>
+(800) 527-7105 Toll Free Line  <br>
+	<a href="http://www.epilepsyga.org ">http://www.epilepsyga.org </a></p>
+
+<p>Hispanic Outreach  <br>
+Date: Last Saturday of Each Month <br>
+Time: 10am – 12pm  <br>
+Location: Latin American Association  <br>
+2750 Buford Highway  <br>
+Atlanta, Georgia 30324  <br>
+For more information or questions, please contact Luz Lopez at (678)7687633.  </p>
+
+
+<p><strong>Kidney:</strong></p>
+<p>National Kidney Foundation of Georgia, Alabama &amp; Mississippi  <br>
+270 Peachtree St., NW <br>
+Ste. 1040  <br>
+Atlanta, GA 30303 <br>
+(800) 488-2277 Automobile Donations <br>
+(770) 452-1539 Main Client Number  <br>
+<a href="http://www.kidneyga.org">http://www.kidneyga.org</a> </p>
+
+
+	<p><strong>Skin Disorders:</strong></p>
+
+<p>Vitiligo Bond, Inc.  <br>
+Confidential Address  <br>
+Atlanta, GA 30349  <br>
+(404) 997-2201 Main Client Number <br>
+	<a href="http://www.vitiligobond.org">http://www.vitiligobond.org</a>  </p>
+
+	<p><strong>Neurological Conditions:  </strong></p>
+<p>Southeastern Brain Tumor Foundation  <br>
+5400 Glenridge Dr., NE # 422471  <br>
+Atlanta, GA 30342  <br>
+(786) 505-7283 Main Client Number  <br>
+	<a href="http://www.sbtf.org">http://www.sbtf.org</a> </p>
+
+
+<p>Pediatric Brain Tumor Foundation Southeast <br>
+6065 Roswell Rd., NE <br>
+Ste. 505  <br>
+Atlanta, GA 30328  <br>
+(404) 252-4107 Main Client Number  <br>
+(404) 252-4108 Fax  <br>
+	<a href="http://www.curethekids.org/get-involved/chapters/georgia/">http://www.curethekids.org/get-involved/chapters/georgia/</a> </p>
+
+
+	<p><strong>Brain Injury Association of Georgia</strong></p>
+<p>1441 Clifton Rd., NE <br>
+Ste. R106A  <br>
+Atlanta, GA 30322 <br>
+(404) 712-5504 Main Client Number  <br>
+(800) 444-6443 Toll Free Line  <br>
+(770) 924-4831 Fax  <br>
+	<a href="http://www.braininjurygeorgia.org">http://www.braininjurygeorgia.org</a> </p>
+
+
+<p>National Multiple Sclerosis Society - Georgia Chapter <br>
+950 E. Paces Ferry Rd., NE <br>
+Ste. 110  <br>
+Atlanta, GA 30326  <br>
+(678) 672-1000 Main Client Number <br>
+(800) 344-4867 Toll Free Line  <br>
+(678) 672-1015 Fax  <br>
+<a href="http://www.nationalmssociety.org/chapters/gaa ">http://www.nationalmssociety.org/chapters/gaa </a></p>
+
+	<p><strong>Vision:</strong></p>
+<p>Center for the Visually Impaired  <br>
+739 W. Peachtree St., NW  <br>
+Atlanta, GA 30308  <br>
+(404) 875-6418 CVI InfoLink <br>
+(800) 558-5451 Toll Free Line  <br>
+<a href="http://www.cviga.org">http://www.cviga.org</a></p>
+
+
+<p>National Federation of the Blind of Georgia/NFBGA <br>
+400 W. Peacthree St., NW <br>
+Ste. 4-829  <br>
+Atlanta, GA 30308 <br>
+(404) 371-1000 Main Client Number <br>
+(404) 645-7787 Fax   <br>
+Box Number 829  <br>
+<a href="http://www.nfbga.org">http://www.nfbga.org</a> </p>
+
+
+	</article>

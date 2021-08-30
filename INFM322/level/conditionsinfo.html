@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Project MyNextLVL</title>
+  </head>
+  <body>
+    <style>
+      .navbar {
+      text-align: center;
+      background-color: #f89318;
+    }
+    .nav {
+      text-align: justify;
+    }
+    .h1 {
+      font-size: 20px;
+    }
+    img {
+      align-items: center;
+    }
+
+    .mainlogo {
+      width: 850px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav li{
+      list-style:none;
+      }
+    h2 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    h1 {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h3 {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .dropdown-submenu {
+    color: #f89318;
+    position: relative;
+    background-color: #ffffff;
+}
+  .dropdown-submenu>.dropdown-menu {
+    color: #f89318;
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    background-color: #ffffff;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 6px;
+}
+  .dropdown-submenu:hover>.dropdown-menu {
+    color: #f89318;
+    display: block;
+    background-color: #ffffff;
+    font-weight: 600;
+}
+  .dropdown-submenu>a:after {
+    color: #f19318;
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+  .dropdown-submenu:hover>a:after {
+    color: #f19318;
+    background-color: #ffffff;
+}
+  .dropdown-submenu.pull-left {
+    color: #f19318;
+    float: none;
+    background-color: #ffffff;
+}
+  .dropdown-submenu.pull-left>.dropdown-menu {
+    color: #f19318;
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: #ffffff;
+}
+  .footertext {
+    color:  #ffffff;
+  }
+    </style>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+<a class="nav-link" href="signedin.html"><img src="logo.jpg.png" width="83" alt="Logo" class="logoborder centerlogo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         <li class="nav-item">
+              <a class="nav-link" href="signedin.html">Home</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="hippa.html">HIPAA Regulations</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Information/Resources
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="conditionsinfo.html">General Information for Conditions</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="localclinics.html">Medical Clinics</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="medicaled.html">Medical Education and Links</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="localsupport.html">Local Resources</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                      </ul>
+                    </li>
+					</li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Your Profile</a>
+				  </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lvlindex.html">Logout</a>
+        </li>
+      </div>
+    </nav>
+</div>
+</head>
+	<h4>Nutrition &amp; Physical Activity:</h4> <br>
+<p>Poor nutrition contributes to many costly diseases, including obesity, heart disease, and some cancers (CDC, 2019). Healthy eating patterns are associated with a lower risk of heart disease, type 2 diabetes, certain types of cancer, some neurological conditions, overweight, and obesity
+(CDC, 2017).  Everything you eat and drink over time matters.  The right mix can help you be healthier now and in the future.  Start with small changes to make healthier choices you can enjoy.</p>
+    <div class="row">
+	    <div class="col-xl-4"><img src="heatlhy.jpg" width="450" height="450" style="padding-left: 50px">
+  </div>
+	    <div class="col-xl-6">Find your healthy eating style and maintain it for a lifetime.  This means: <br>
+•	Make half your plate fruits and vegetables. <br>
+•	Focus on whole fruits. <br>
+•	Vary your veggies. <br>
+•	Make half your grains whole grains.? Move to low-fat and fat-free milk or yogurt. <br>
+•	Vary your protein routine. <br>
+•	Drink and eat less sodium, saturated fat, and added sugars. <br>
+•	Drink 8-10 glasses of water per day. <br></div>
+    </div>
+
+ <br>
+<p>Active people generally live longer and are at less risk for serious health problems like heart disease, type 2 diabetes, obesity, and some cancers. For people with chronic diseases, physical activity can help manage these conditions and complications (CDC, 2019). Physical activity simply means movement of the body that uses energy. Walking, gardening, briskly pushing a baby stroller, climbing the stairs, playing soccer, or dancing the night away are all good examples of being active. For health benefits, physical activity should be moderate or vigorous intensity. </p>
+    <div class="row">
+	    <div class="col-xl-4"><img src="activity.jpg" width="450" height="300" alt=""></div>
+		<div class="col-xl-8" style="padding-left: 60px;">Learn more about eating healthy and staying active:<br>
+<a href="https://www.choosemyplate.gov/eathealthy/dietary-guidelines">https://www.choosemyplate.gov/eathealthy/dietary-guidelines</a>
+<br><a href="https://www.cdc.gov/physicalactivity/index.html">https://www.cdc.gov/physicalactivity/index.html</a><br>
+ <br>
+ </div>
+    </div>
+
+
+<p>Reference:  <br>
+	<a href="https://www.cdc.gov/nutrition/about-nutrition/index.html">https://www.cdc.gov/nutrition/about-nutrition/index.html</a> </p>
+
+<h4>Smoking Facts:</h4> <br>
+
+<p>Smoking and the use of other tobacco products, including cigars and smokeless tobacco, causes or worsens numerous diseases and conditions. Combustible products also expose nearby people to toxic secondhand smoke. Learn more on the health effects of smoking, secondhand smoke, other tobacco products and marijuana:</p>
+
+•	Smoking is the leading cause of preventable death in the U.S., causing over 480,000 deaths per year. <br>
+•	Secondhand smoke is a serious health hazard for people of all ages, causing more than 41,000 deaths each year. <br>
+•	Marijuana smoke contains many of the same toxins, irritants and carcinogens as tobacco smoke. <br>
+•	E-cigarettes are a new tobacco product, and the potential health consequences and safety of these products are unknown. <br>
+•	Smokeless Tobacco products are addictive, known to cause of cancer and are not a safe alternative to cigarettes. <br>
+•	Cigars have many of the same health risks as cigarettes, including causing certain cancers. <br>
+•	Hookah smoke contains many of the same toxic components found in cigarette smoke. <br>
+•	Nicotine is the addictive drug in tobacco products. Cigarettes, cigars, smokeless tobacco and nearly all e-cigarettes contain nicotine. <br>
+•	Menthol is a flavoring that tobacco companies have relied on to make cigarettes more appealing and addicting.<p></p>
+
+<p>Reference:<br> American Lung Association. (2019). Health Effects of Smoking and Tobacco Products. <br>
+	Retrieved from <a href="https://www.lung.org/stopsmoking/smoking-facts/health-effects.html">https://www.lung.org/stopsmoking/smoking-facts/health-effects.html</a> </p>
+
+
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/69R0E_Rg_mQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><br>
+ <br>
+<strong>Need help quitting smoking?</strong>
+	<br>
+<p>The Georgia Department of Public Health’s Georgia Tobacco Quit Line is a public health service.  It is a FREE, confidential and effective service is available to assist Georgians with quitting smoking and all forms of tobacco.  Improve your chances of quitting by calling the Georgia Tobacco Quit Line (GTQL). <br>
+English: 1-877-270-STOP (877-270-7867) <br>
+Spanish: 1-877-2NO-FUME <br>
+Hearing Impaired: 1-877-777-6534 <br>
+Hours of Operation: Available every day, 24 hours a day, 7 days a week (including holidays) <br>
+Or you can talk to your medical provider about smoking cessation or call the Lung Helpline at 1-800-LUNGUSA to learn more about Freedom From Smoking clinics.</p>
+
+
+</article>
+</html>

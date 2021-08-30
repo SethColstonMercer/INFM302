@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Project MyNextLVL</title>
+  </head>
+  <body>
+    <style>
+      .navbar {
+      text-align: center;
+      background-color: #f89318;
+    }
+    .nav {
+      text-align: justify;
+    }
+    .h1 {
+      font-size: 20px;
+    }
+    img {
+      align-items: center;
+    }
+
+    .mainlogo {
+      width: 850px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav li{
+      list-style:none;
+      }
+    h2 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    h1 {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h3 {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .dropdown-submenu {
+    color: #f89318;
+    position: relative;
+    background-color: #ffffff;
+}
+  .dropdown-submenu>.dropdown-menu {
+    color: #f89318;
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    background-color: #ffffff;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 6px;
+}
+  .dropdown-submenu:hover>.dropdown-menu {
+    color: #f89318;
+    display: block;
+    background-color: #ffffff;
+    font-weight: 600;
+}
+  .dropdown-submenu>a:after {
+    color: #f19318;
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+  .dropdown-submenu:hover>a:after {
+    color: #f19318;
+    background-color: #ffffff;
+}
+  .dropdown-submenu.pull-left {
+    color: #f19318;
+    float: none;
+    background-color: #ffffff;
+}
+  .dropdown-submenu.pull-left>.dropdown-menu {
+    color: #f19318;
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: #ffffff;
+}
+  .footertext {
+    color:  #ffffff;
+  }
+    </style>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+<a class="nav-link" href="lvlindex.html"><img src="logo.jpg.png" width="83" alt="Logo" class="logoborder centerlogo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         <li class="nav-item">
+              <a class="nav-link" href="signedin.html">Home</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="hippa.html">HIPAA Regulations</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Information/Resources
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">General Information for Conditions</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Medical Clinics</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Medical Education and Links</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Local Resources</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                      </ul>
+                    </li>
+					</li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Your Profile</a>
+				  </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lvlindex.html">Logout</a>
+        </li>
+        </form>
+      </div>
+    </nav>
+</div>
+<div class="row">
+    <div class="col-xl-2"><a href=".html"></a><img src="seth.jpg" width="142" height="189" alt="">
+	  		<p>
+			  </p><div class="btn-lg">
+		<button input="" type="button" onclick="window.location.href='newProfile.html';" style="background-color: darkorange">Edit Profile</button>	</div>
+			  <strong>Upcoming Refill(s):</strong><br>
+Hydroxine: 05/14/2022<br>
+Promethazine: 05/14/2022<br>
+<strong>Upcoming Appointment(s)</strong><br>
+Dr. Hanes: 01/21/2022<br>
+	  <br>
+	<a href="calendar.html"><img src="calender.png" width="100" height="100" alt=""></a></div>
+<div class="col-xl-3"><b>Seth C<br>
+		  Age: 22<br>
+		  Height: 6'2"<br>
+		  Weight: 220 lbs <p></p>
+		  Primary Care Physician:<br>
+		  Dr. Hanes (770) <p></p>
+		  Condition(s): <ul><li>Anxiety</li></ul>
+		  Medication(s): <ul><li>Hydroxine, Promethazine</li></ul>
+		  Emergency Contact:<br>
+		  Savannah H. (678)999-9999</b></div>
+  <div class="col-xl-6">
+	    <div id="accordion1" role="tablist">
+	      <div class="card">
+	        <div class="card-header" role="tab" id="headingOne1">
+	          <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1">My Medication(s)</a> </h5>
+            </div>
+	        <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion1">
+	          <div class="card-body">
+	            <form>
+	              <div class="form-group">
+	                <label for="exampleInputName">Medication Name</label>
+	                <input type="text" class="form-control" id="exampleInputName" placeholder="Novolog">
+	                </div>
+	              <div class="form-group">
+	                <label for="exampleInputType">Medication Type</label>
+	                <input type="text" class="form-control" id="exampleInputType" placeholder="Prefilled syringe: 100units/mL (3mL NovoLog FlexPen, FlexTouch, or Fiasp FlexTouch)">
+                  </div>
+				  <div class="form-group">
+	                <label for="exampleInputDosage">Dosage</label>
+	                <input type="text" class="form-control" id="exampleInputPhone" placeholder="1 dose daily">
+	              </div>
+				  <div class="form-group">
+	                <label for="exampleInputName1">Medication Name</label>
+	                <input type="text" class="form-control" id="exampleInputName1" placeholder="Montelukast">
+	                </div>
+	              <div class="form-group">
+	                <label for="exampleInputType1">Medication Type</label>
+	                <input type="text" class="form-control" id="exampleInputType1" placeholder="10 MG Tablet">
+                  </div>
+				  <div class="form-group">
+	                <label for="exampleInputDosage1">Dosage</label>
+	                <input type="text" class="form-control" id="exampleInputPhone1" placeholder="1 tablet, once a day">
+	              </div>
+				  <div class="form-group">
+	                <label for="exampleInputName2">Medication Name</label>
+	                <input type="text" class="form-control" id="exampleInputName2" placeholder="Nutrafol">
+	                </div>
+	              <div class="form-group">
+	                <label for="exampleInputType2">Medication Type</label>
+	                <input type="text" class="form-control" id="exampleInputType2" placeholder="10 MG Tablet">
+                  </div>
+				  <div class="form-group">
+	                <label for="exampleInputDosage2">Dosage</label>
+	                <input type="text" class="form-control" id="exampleInputPhone2" placeholder="1 pill, twice a day">
+	              </div>
+	              <div class="form-check">
+	                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+	                <label class="form-check-label" for="exampleCheck1">Save Edits</label>
+                  </div><br>
+
+	              <center><div class="btn-lg">
+		<button input="" type="button" onclick="window.location.href='profile.html';" style="background-color: darkorange">Editing Done</button>
+					  </div></center>
+
+				</form>
+
+				</div>
+
+
+				  </div>
+          </div>
+
+	  </div></div>
+
+
+
+  </div>
